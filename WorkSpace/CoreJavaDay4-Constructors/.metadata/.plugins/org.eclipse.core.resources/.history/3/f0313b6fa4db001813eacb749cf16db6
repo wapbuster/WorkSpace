@@ -1,0 +1,9 @@
+package com.indus.training.domain;
+
+public class MassInput {
+
+	public MassInput() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,30 @@
+package com.indus.training.service.impl;
+
+import com.indus.tarining.domain.AreaInput;
+import com.indus.tarining.domain.AreaOutput;
+import com.indus.training.service.IArea;
+
+/**
+ * 
+ * @author sunnyhith
+ *
+ */
+public class Area implements IArea {
+/**
+ * 
+ */
+	public AreaOutput area(AreaInput areaInObj) {
+		AreaOutput areaOutObj = null;
+
+		double side = areaInObj.getSide();
+
+		double result = side * side;
+
+		areaOutObj = new AreaOutput();
+		
+		areaOutObj.setSide(side);
+		areaOutObj.setResult(result);
+		return areaOutObj;
+	}
+
+}

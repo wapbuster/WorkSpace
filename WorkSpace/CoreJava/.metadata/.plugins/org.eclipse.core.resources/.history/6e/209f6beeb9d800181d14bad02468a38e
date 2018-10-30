@@ -1,0 +1,17 @@
+package com.indus.training.height.impl;
+
+import com.indus.training.height.IHeight;
+
+public class Height implements IHeight {
+
+	public double inchToFeet(double itof) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public double feetToInch(double ftoi) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

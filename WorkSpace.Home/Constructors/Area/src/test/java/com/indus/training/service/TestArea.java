@@ -1,0 +1,80 @@
+package com.indus.training.service;
+
+import com.indus.training.domain.AreaInput;
+import com.indus.training.domain.AreaOutput;
+import com.indus.training.service.impl.Area;
+
+import junit.framework.TestCase;
+
+public class TestArea extends TestCase {
+
+	private Area areaObj = null;
+
+	protected void setUp() throws Exception {
+		areaObj = new Area();	//areaObj in stack and Area in Heap.
+	}
+
+	protected void tearDown() throws Exception {
+		areaObj = null;
+	}
+
+	public void testAreaScenario1() {	//stored in stack memory when the method is called.
+
+		// input
+		AreaInput areaInObj = new AreaInput(5);	//areaInObj in stack and AreaInput in Heap.
+		//areaInObj.setSide(2.0);	//into the stack.
+
+		// expected results
+		AreaOutput expAreaOutObj = new AreaOutput(5.0,25.0);
+		/*expAreaOutObj.setSide(2.0);	//into the stack
+		expAreaOutObj.setResult(4.0); //into the stack
+*/
+		// actual results
+		AreaOutput actAreaOutObj = areaObj.area(areaInObj);	//in heap as object is called.
+
+		// assertion
+		assertEquals(expAreaOutObj.getSide(), actAreaOutObj.getSide(), 0);
+		assertEquals(expAreaOutObj.getResult(), actAreaOutObj.getResult(), 0);
+	}
+
+	public void testAreaScenario2() {
+
+		// input
+		AreaInput areaInObj = new AreaInput(6);
+		//areaInObj.setSide(5.0);
+
+		// expected results
+		AreaOutput expAreaOutObj = new AreaOutput(6.0,36.0);
+		/*expAreaOutObj.setSide(5.0);
+		expAreaOutObj.setResult(25.0);*/
+
+		// actual results
+		AreaOutput actAreaOutObj = areaObj.area(areaInObj);
+
+		// assertion
+		assertEquals(expAreaOutObj.getSide(), actAreaOutObj.getSide(), 0);
+		assertEquals(expAreaOutObj.getResult(), actAreaOutObj.getResult(), 0);
+	}
+
+	public void testAreaScenario3() {
+
+		// input
+		AreaInput areaInObj = new AreaInput(10.0);
+		//areaInObj.setSide(5.0);
+
+		// expected results
+		AreaOutput expAreaOutObj = new AreaOutput(10.0,100.0);
+		/*
+		 * expAreaOutObj.setSide(5.0); expAreaOutObj.setResult(25.0);
+		 */
+
+		// actual results
+		AreaOutput actAreaOutObj = areaObj.area(areaInObj);
+
+		// assertion
+		assertEquals(expAreaOutObj.getSide(), actAreaOutObj.getSide(), 0);
+		assertEquals(expAreaOutObj.getResult(), actAreaOutObj.getResult(), 0);
+	}
+
+}
+

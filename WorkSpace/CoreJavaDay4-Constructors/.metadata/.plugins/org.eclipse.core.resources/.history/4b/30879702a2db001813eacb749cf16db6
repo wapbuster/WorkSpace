@@ -1,0 +1,9 @@
+package com.indus.training.service.impl;
+
+public class Height {
+
+	public Height() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

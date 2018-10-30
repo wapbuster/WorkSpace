@@ -1,0 +1,31 @@
+package com.indus.training.area.impl;
+
+import com.indus.training.area.IArea;
+
+public class Area implements IArea {
+
+	public double square(double side) {
+		double area = 0.0;
+
+		area = side * side;
+
+		return area;
+	}
+
+	public double rectangle(double length, double breadth) {
+		double area = 0.0;
+
+		area = length * breadth;
+
+		return area;
+	}
+
+	public double circle(double radius) {
+		double area = 0.0;
+
+		area = 3.14 * (radius * radius);
+
+		return area;
+	}
+
+}

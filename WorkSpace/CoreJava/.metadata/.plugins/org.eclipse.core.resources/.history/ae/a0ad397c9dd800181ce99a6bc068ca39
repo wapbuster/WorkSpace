@@ -1,0 +1,17 @@
+package com.indus.training.distance.impl;
+
+import com.indus.training.distance.IDistance;
+
+public class Distance implements IDistance {
+
+	public double milesToKm(double mtok) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public double kmToMiles(double ktom) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

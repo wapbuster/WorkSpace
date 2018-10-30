@@ -1,0 +1,22 @@
+package com.indus.training.area.impl;
+
+import com.indus.training.area.IArea;
+
+public class Area implements IArea {
+
+	public double square(double side) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public double rectangle(double length, double breadth) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public double circle(double radius) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

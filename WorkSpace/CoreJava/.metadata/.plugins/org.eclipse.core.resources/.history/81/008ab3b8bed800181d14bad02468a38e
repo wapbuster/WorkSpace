@@ -1,0 +1,17 @@
+package com.indus.training.mass.impl;
+
+import com.indus.training.mass.IMass;
+
+public class Mass implements IMass {
+
+	public double kgToPound(double ktop) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public double poundToKg(double pToKg) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

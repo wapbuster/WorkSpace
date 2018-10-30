@@ -1,0 +1,14 @@
+package com.indus.training.service.impl;
+
+import com.indus.training.domain.MassInput;
+import com.indus.training.domain.MassOutput;
+import com.indus.training.service.IMass;
+
+public class Mass implements IMass {
+
+	public MassOutput mass(MassInput massInObj) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

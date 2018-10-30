@@ -1,0 +1,9 @@
+package com.indus.training.domain;
+
+public class CalciInput {
+
+	public CalciInput() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

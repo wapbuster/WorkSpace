@@ -1,0 +1,111 @@
+package com.indus.training.core;
+
+import com.indus.training.core.impl.Calc;
+
+import junit.framework.TestCase;
+
+public class TestCalc extends TestCase {
+
+	private Calc calObj = null;
+
+	protected void setUp() throws Exception {
+		calObj = new Calc();
+	}
+
+	protected void tearDown() throws Exception {
+		calObj = null;
+	}
+
+	public void testAdditionSenario1() {
+
+		// Input
+		double param1 = 10.0;
+		double param2 = 20.0;
+
+		// Expected Output
+		double expResult = 30.0;
+
+		// Actual Output
+		double actualResult = calObj.addition(param1, param2);
+
+		// Assertion
+		assertEquals(expResult, actualResult, 0);
+
+	}
+
+	public void testAdditionSenario2() {
+		// Input
+		double param1 = 10.0;
+		double param2 = 25.0;
+
+		// Expected Output
+		double expResult = 35.0;
+
+		// Actual Output
+		double actualResult = calObj.addition(param1, param2);
+
+		// Assertion
+		assertEquals(expResult, actualResult, 0);
+	}
+
+	public void testAdditionSenario3() {
+		// Input
+		double param1 = 20.0;
+		double param2 = 20.0;
+
+		// Expected Output
+		double expResult = 40.0;
+
+		// Actual Output
+		double actualResult = calObj.addition(param1, param2);
+
+		// Assertion
+		assertEquals(expResult, actualResult, 0);
+	}
+
+	public void testSubtrat() {
+		// Input
+		double param1 = 30.0;
+		double param2 = 20.0;
+
+		// Expected Output
+		double expResult = 10.0;
+
+		// Actual Output
+		double actualResult = calObj.subtract(param1, param2);
+
+		// Assertion
+		assertEquals(expResult, actualResult, 0);
+	}
+
+	public void testMultiply() {
+		// Input
+		double param1 = 10.0;
+		double param2 = 2.0;
+
+		// Expected Output
+		double expResult = 20.0;
+
+		// Actual Output
+		double actualResult = calObj.multiply(param1, param2);
+
+		// Assertion
+		assertEquals(expResult, actualResult, 0);
+	}
+
+	public void testDivision() {
+		// Input
+		double param1 = 10.0;
+		double param2 = 20.0;
+
+		// Expected Output
+		double expResult = 30.0;
+
+		// Actual Output
+		double actualResult = calObj.addition(param1, param2);
+
+		// Assertion
+		assertEquals(expResult, actualResult, 0);
+	}
+
+}

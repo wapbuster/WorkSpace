@@ -1,0 +1,14 @@
+package com.indus.training.service.impl;
+
+import com.indus.training.domain.AreaInput;
+import com.indus.training.domain.AreaOutput;
+import com.indus.training.service.IArea;
+
+public class Area implements IArea {
+
+	public AreaOutput area(AreaInput areaInObj) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

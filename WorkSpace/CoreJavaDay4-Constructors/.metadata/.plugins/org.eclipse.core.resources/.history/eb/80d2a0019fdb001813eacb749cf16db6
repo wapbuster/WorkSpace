@@ -1,0 +1,9 @@
+package com.indus.training.domain;
+
+public class DistanceInput {
+
+	public DistanceInput() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

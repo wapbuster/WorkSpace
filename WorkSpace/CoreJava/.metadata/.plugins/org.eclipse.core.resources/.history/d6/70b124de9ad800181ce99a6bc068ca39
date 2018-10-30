@@ -1,0 +1,5 @@
+package com.indus.training.distance;
+
+public interface IDistance {
+
+}

@@ -1,0 +1,37 @@
+package com.indus.training.scical;
+
+/**
+ * 
+ * @author sunnyhith
+ *
+ */
+public interface ISciCal {
+	/**
+	 * 
+	 * @param tan
+	 * @return
+	 */
+	public double tan(double tan);
+
+	/**
+	 * 
+	 * @param cos
+	 * @return
+	 */
+	public double cos(double cos);
+
+	/**
+	 * 
+	 * @param sin
+	 * @return
+	 */
+	public double sin(double sin);
+
+	/**
+	 * 
+	 * @param sqroot
+	 * @return
+	 */
+	public double sqRoot(double sqroot);
+
+}

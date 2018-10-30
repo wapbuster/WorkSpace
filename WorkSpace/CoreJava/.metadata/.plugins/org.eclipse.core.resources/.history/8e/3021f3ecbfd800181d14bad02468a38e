@@ -1,0 +1,80 @@
+package com.indus.training.mass;
+
+import com.indus.training.mass.impl.Mass;
+
+import junit.framework.TestCase;
+
+public class TestMass extends TestCase {
+	private Mass masObj = null;
+
+	protected void setUp() throws Exception {
+		masObj = new Mass();
+	}
+
+	protected void tearDown() throws Exception {
+		masObj = null;
+	}
+
+	public void testKgToPoundScenario1() {
+		// Input
+		double ktop = 1.0;
+		// Expected Result
+		double expResult = 2.204621;
+		// Actual Result
+		double actualResult = masObj.kgToPound(ktop);
+		// Assertion
+		assertEquals(expResult, actualResult, 0);
+
+	}
+
+	public void testKgToPoundScenario2() {
+		// Input
+
+		// Expected Result
+
+		// Actual Result
+
+		// Assertion
+	}
+
+	public void testKgToPoundScenario3() {
+		// Input
+
+		// Expected Result
+
+		// Actual Result
+
+		// Assertion
+	}
+
+	public void testPoundToKgScenario1() {
+		// Input
+
+		// Expected Result
+
+		// Actual Result
+
+		// Assertion
+	}
+
+	public void testPoundToKgScenario2() {
+		// Input
+
+		// Expected Result
+
+		// Actual Result
+
+		// Assertion
+	}
+
+	public void testPoundToKgScenario3() {
+		// Input
+
+		// Expected Result
+
+		// Actual Result
+
+		// Assertion
+	}
+
+}

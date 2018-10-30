@@ -1,0 +1,39 @@
+package com.indus.training.service;
+
+import com.indus.tarining.domain.AreaInput;
+import com.indus.tarining.domain.AreaOutput;
+import com.indus.training.service.impl.Area;
+
+import junit.framework.TestCase;
+
+public class TestArea extends TestCase {
+	
+	private Area areaObj = null;
+
+	protected void setUp() throws Exception {
+		areaObj = new Area();
+	}
+
+	protected void tearDown() throws Exception {
+		areaObj = null;
+	}
+	
+	public void testAreaScenario1() {
+		
+		//input
+		AreaInput areaInObj = new AreaInput();
+		areaInObj.setSide(2.0);
+		
+		//expected results
+		AreaOutput expAreaOutObj = new AreaOutput();
+		expAreaOutObj.setSide(4.0);
+		
+		//actual results
+		AreaOutput actAreaOutObj = areaObj.area(areaInObj);
+		
+		//assertion
+		assertEquals(expAreaOutObj.getSide(), actAreaOutObj.getSide(), 0);
+		assertEquals(expAreaOutObj.getResult(), actAreaOutObj.getResult(), 0);
+	}
+
+}

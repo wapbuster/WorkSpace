@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.indus.training.service.impl.Calculator"/>
+<fullyQualifiedTypeName name="com.indus.training.domain.CalciInput"/>
+<fullyQualifiedTypeName name="com.indus.training.domain.CalciOutput"/>
+<fullyQualifiedTypeName name="com.indus.training.domain.AreaOutput"/>
+<fullyQualifiedTypeName name="com.indus.training.domain.AreaInput"/>
+<fullyQualifiedTypeName name="java.awt.geom.Area"/>
+</qualifiedTypeNameHistroy>

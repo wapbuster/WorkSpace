@@ -1,0 +1,24 @@
+package com.indus.training.domain;
+
+public class DistanceOutput {
+
+	public double length;
+	public double result;
+
+	public double getLength() {
+		return length;
+	}
+
+	public void setLength(double length) {
+		this.length = length;
+	}
+
+	public double getResult() {
+		return result;
+	}
+
+	public void setResult(double result) {
+		this.result = result;
+	}
+
+}

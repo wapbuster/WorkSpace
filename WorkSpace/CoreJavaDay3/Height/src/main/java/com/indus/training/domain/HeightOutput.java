@@ -1,0 +1,24 @@
+package com.indus.training.domain;
+
+public class HeightOutput {
+
+	public double height;
+	public double result;
+
+	public double getHeight() {
+		return height;	//stored in stack
+	}
+
+	public void setHeight(double height) {
+		this.height = height;	//stored in stack
+	}
+
+	public double getResult() {
+		return result;	//stored in stack
+	}
+
+	public void setResult(double result) {
+		this.result = result;	//stored in stack
+	}		//garbage collected after method ends
+
+}

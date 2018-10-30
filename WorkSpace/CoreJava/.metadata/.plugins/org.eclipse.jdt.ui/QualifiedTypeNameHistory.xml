@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="com.indus.training.core.impl.Calculator"/>
+<fullyQualifiedTypeName name="com.indus.training.conversions.impl.Conversion"/>
+<fullyQualifiedTypeName name="com.indus.training.distance.impl.Distance"/>
+<fullyQualifiedTypeName name="com.indus.training.height.impl.Height"/>
+<fullyQualifiedTypeName name="com.indus.training.mass.impl.Mass"/>
+<fullyQualifiedTypeName name="com.indus.training.scical.impl.SciCal"/>
+<fullyQualifiedTypeName name="com.indus.training.area.impl.Area"/>
+</qualifiedTypeNameHistroy>

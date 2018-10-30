@@ -1,0 +1,77 @@
+package com.indus.training.service;
+
+import com.indus.training.domain.MassInput;
+import com.indus.training.domain.MassOutput;
+import com.indus.training.service.impl.Mass;
+
+import junit.framework.TestCase;
+
+public class TestMass extends TestCase {
+
+	private Mass massObj = null;
+
+	protected void setUp() throws Exception {
+		massObj = new Mass();	//massObj in stack and Mass in Heap.
+	}
+
+	protected void tearDown() throws Exception {
+		massObj = null;
+	}
+
+	public void testMassScenario1() {	//stored in stack memory when the method is called.
+
+		// input
+		MassInput massInObj = new MassInput(1.0);	//massInObj in stack and MassInput in Heap.
+
+		// expected results
+		MassOutput expMassOutObj = new MassOutput(1.0,2.20462);
+
+		// actual results
+		MassOutput actMassOutObj = massObj.mass(massInObj);	//in heap as object is called.
+
+		// assertion
+		assertEquals(expMassOutObj.getMass(), actMassOutObj.getMass(), 0);
+		assertEquals(expMassOutObj.getResult(), actMassOutObj.getResult(), 0);
+	}
+
+	public void testMassScenario2() {
+
+		// input
+		MassInput massInObj = new MassInput(12.0);
+		//massInObj.setMass(5.0);
+
+		// expected results
+		MassOutput expMassOutObj = new MassOutput(12.0,26.455439999999996);
+		/*expMassOutObj.setMass(5.0);
+		expMassOutObj.setResult(25.0);*/
+
+		// actual results
+		MassOutput actMassOutObj = massObj.mass(massInObj);
+
+		// assertion
+		assertEquals(expMassOutObj.getMass(), actMassOutObj.getMass(), 0);
+		assertEquals(expMassOutObj.getResult(), actMassOutObj.getResult(), 0);
+	}
+
+	public void testMassScenario3() {
+
+		// input
+		MassInput massInObj = new MassInput(5.9);
+		//massInObj.setMass(5.0);
+
+		// expected results
+		MassOutput expMassOutObj = new MassOutput(5.9,3.666873834679926);
+		/*
+		 * expMassOutObj.setMass(5.0); expMassOutObj.setResult(25.0);
+		 */
+
+		// actual results
+		MassOutput actMassOutObj = massObj.mass(massInObj);
+
+		// assertion
+		assertEquals(expMassOutObj.getMass(), actMassOutObj.getMass(), 0);
+		assertEquals(expMassOutObj.getResult(), actMassOutObj.getResult(), 0);
+	}
+
+}
+

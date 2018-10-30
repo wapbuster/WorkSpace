@@ -1,0 +1,9 @@
+package com.indus.training.service;
+
+public class IMass {
+
+	public IMass() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

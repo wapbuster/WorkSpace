@@ -1,0 +1,24 @@
+package com.indus.training.service.impl;
+
+import com.indus.training.domain.MassInput;
+import com.indus.training.domain.MassOutput;
+import com.indus.training.service.IMass;
+
+public class Mass implements IMass {
+
+	public MassOutput mass(MassInput massInObj) {
+		MassOutput massOutObj = null;
+
+		double mass = massInObj.getMass();
+
+		double result = mass * 2.20462;
+
+		massOutObj = new MassOutput();
+
+		massOutObj.setMass(mass);
+		massOutObj.setResult(result);
+
+		return massOutObj;
+	}
+
+}

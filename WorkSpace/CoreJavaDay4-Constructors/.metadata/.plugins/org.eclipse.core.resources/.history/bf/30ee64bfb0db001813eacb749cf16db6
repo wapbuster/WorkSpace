@@ -1,0 +1,21 @@
+package com.indus.training.domain;
+
+public class DistanceOutput {
+
+	private double distance;
+	private double result;
+
+	public DistanceOutput(double distance, double result) {
+		this.distance = distance;
+		this.result = result;
+	}
+
+	public double getDistance() {
+		return distance;
+	}
+
+	public double getResult() {
+		return result;
+	}
+
+}

@@ -1,0 +1,27 @@
+package com.indus.training.core.impl;
+
+import com.indus.training.core.ICalc;
+
+public class Calc implements ICalc {
+
+	public double addition(double param1, double param2) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public double subtract(double param1, double param2) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public double multiply(double param1, double param2) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public double division(double param1, double param2) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

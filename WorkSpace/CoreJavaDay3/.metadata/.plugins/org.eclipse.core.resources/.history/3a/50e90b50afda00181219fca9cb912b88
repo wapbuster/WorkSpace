@@ -1,0 +1,23 @@
+package com.indus.training.service.impl;
+
+import com.indus.training.domain.HeightInput;
+import com.indus.training.domain.HeightOutput;
+import com.indus.training.service.IHeight;
+
+public class Height implements IHeight {
+
+	public HeightOutput height(HeightInput heightInObj) {
+		HeightOutput heightOutObj = null;	//heightOutObj not declared.
+
+		double height = heightInObj.getHeight();	//stored in stack
+
+		double result = height * 12;	//stored in stack
+
+		heightOutObj = new HeightOutput();	//declared and stored in heap memory.
+
+		heightOutObj.setHeight(height);	// a block in the top of the stack is created.
+		heightOutObj.setResult(result);	// a block in the top of the stack is created.
+
+		return heightOutObj;
+	}
+}

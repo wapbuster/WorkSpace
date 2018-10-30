@@ -1,0 +1,16 @@
+package com.indus.training.domain;
+
+public class AreaOutput {
+
+	private double side;
+	private double result;
+
+	public AreaOutput(double side) {
+		this.side = side;
+	}
+
+	public double getSide() {
+		return side;
+	}
+
+}

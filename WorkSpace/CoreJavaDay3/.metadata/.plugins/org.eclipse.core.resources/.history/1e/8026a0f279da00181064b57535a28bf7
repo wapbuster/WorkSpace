@@ -1,0 +1,13 @@
+package com.indus.training.service.impl;
+
+import com.indus.training.domain.HeightInput;
+import com.indus.training.domain.HeightOutput;
+
+public class Height implements IHeight {
+
+	public HeightOutput height(HeightInput heightInObj) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

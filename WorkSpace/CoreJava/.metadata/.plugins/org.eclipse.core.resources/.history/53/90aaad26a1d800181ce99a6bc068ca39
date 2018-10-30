@@ -1,0 +1,103 @@
+package com.indus.training.distance;
+
+import com.indus.training.distance.impl.Distance;
+
+import junit.framework.TestCase;
+
+public class TestDistance extends TestCase {
+	private Distance disObj = null;
+
+	protected void setUp() throws Exception {
+		disObj = new Distance();
+	}
+
+	protected void tearDown() throws Exception {
+		disObj = null;
+	}
+
+	public void testMilesToKmScenario1() {
+		// Input
+		double mtok = 1.0;
+		
+
+		// Expected Output
+		double expResult = 1.609;
+
+		// Actual Output
+		double actualResult = disObj.milesToKm(mtok);
+
+		// Assertion
+		assertEquals(expResult, actualResult, 0);
+	}
+
+	public void testMilesToKmScenario2() {
+		// Input
+		double mtok = 65.0;
+
+		// Expected Output
+		double expResult = 104.585;
+
+		// Actual Output
+		double actualResult = disObj.milesToKm(mtok);
+
+		// Assertion
+		assertEquals(expResult, actualResult, 0);
+	}
+
+	public void testMilesToKmScenario3() {
+		// Input
+		double mtok = 45.0;
+
+		// Expected Output
+		double expResult = 72.405;
+
+		// Actual Output
+		double actualResult = disObj.milesToKm(mtok);
+
+		// Assertion
+		assertEquals(expResult, actualResult, 0);
+	}
+
+	public void testKmToMilesScenario1() {
+		// Input
+		double ktom = 1.0;
+		
+		// Expected Output
+		double expResult = 0.6215040397762586;
+
+		// Actual Output
+		double actualResult = disObj.kmToMiles(ktom);
+
+		// Assertion
+		assertEquals(expResult, actualResult, 0);
+	}
+
+	public void testKmToMilesScenario2() {
+		// Input
+		double ktom = 23.0;
+		
+		// Expected Output
+		double expResult = 14.294592914853947;
+
+		// Actual Output
+		double actualResult = disObj.kmToMiles(ktom);
+
+		// Assertion
+		assertEquals(expResult, actualResult, 0);
+	}
+
+	public void testKmToMilesScenario3() {
+		// Input
+		double ktom = 123.0;
+
+		// Expected Output
+		double expResult = 76.44499689247982;
+
+		// Actual Output
+		double actualResult = disObj.kmToMiles(ktom);
+
+		// Assertion
+		assertEquals(expResult, actualResult, 0);
+	}
+
+}

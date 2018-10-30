@@ -1,0 +1,5 @@
+package com.indus.training.domain;
+
+public class SciCalInput {
+
+}

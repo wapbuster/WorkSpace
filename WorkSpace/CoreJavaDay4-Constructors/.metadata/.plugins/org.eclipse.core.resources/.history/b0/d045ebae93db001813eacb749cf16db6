@@ -1,0 +1,9 @@
+package com.indus.training.domain;
+
+public class AreaInput {
+
+	public AreaInput() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

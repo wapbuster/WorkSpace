@@ -1,0 +1,27 @@
+package com.indus.training.scical.impl;
+
+import com.indus.training.scical.ISciCal;
+
+public class SciCal implements ISciCal {
+
+	public double tan(double value) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public double cos(double value) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public double sin(double value) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public double sqRoot(double value) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

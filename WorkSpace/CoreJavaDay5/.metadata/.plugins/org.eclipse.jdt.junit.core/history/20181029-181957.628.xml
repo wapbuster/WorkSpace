@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestCalc" project="Calc" tests="6" started="6" failures="0" errors="0" ignored="0">
+  <testsuite name="com.indus.training.core.TestCalc" time="0.0">
+    <testcase name="testAdditionSenario1" classname="com.indus.training.core.TestCalc" time="0.0"/>
+    <testcase name="testAdditionSenario2" classname="com.indus.training.core.TestCalc" time="0.0"/>
+    <testcase name="testAdditionSenario3" classname="com.indus.training.core.TestCalc" time="0.0"/>
+    <testcase name="testDivision" classname="com.indus.training.core.TestCalc" time="0.0"/>
+    <testcase name="testMultiply" classname="com.indus.training.core.TestCalc" time="0.0"/>
+    <testcase name="testSubtrat" classname="com.indus.training.core.TestCalc" time="0.0"/>
+  </testsuite>
+</testrun>

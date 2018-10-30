@@ -1,0 +1,10 @@
+package com.indus.training.service;
+
+import com.indus.training.domain.DistanceInput;
+import com.indus.training.domain.DistanceOutput;
+
+public interface IDistance {
+	
+	public DistanceOutput distance(DistanceInput distanceInObj);
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.indus.training.service&apos; to &apos;SciCal/src/test/java&apos;&#x0D;&#x0A;- Original project: &apos;SciCal&apos;&#x0D;&#x0A;- Destination element: &apos;SciCal/src/test/java&apos;&#x0D;&#x0A;- Original element: &apos;SciCal/src/main/java/com.indus.training.service&apos;" description="Copy package" destination="/src\/test\/java" element1="/src\/main\/java&lt;com.indus.training.service" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1540708679545" version="1.0"/>
+</session>

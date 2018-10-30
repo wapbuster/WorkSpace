@@ -1,0 +1,11 @@
+package com.indus.training.domain;
+
+public class AreaOutput {
+
+	private double side;
+	
+	public AreaOutput() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

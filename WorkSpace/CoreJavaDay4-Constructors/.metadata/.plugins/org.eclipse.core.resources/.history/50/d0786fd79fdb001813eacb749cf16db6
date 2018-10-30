@@ -1,0 +1,18 @@
+package com.indus.training.service.impl;
+
+import com.indus.training.domain.DistanceInput;
+import com.indus.training.domain.DistanceOutput;
+import com.indus.training.service.IDistance;
+
+public class Distance implements IDistance {
+
+	public Distance() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public DistanceOutput distance(DistanceInput distanceInObj) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

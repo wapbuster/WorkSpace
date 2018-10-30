@@ -1,0 +1,33 @@
+package com.indus.training.service.impl;
+
+import com.indus.training.domain.CalciInput;
+import com.indus.training.domain.CalciOutput;
+import com.indus.training.service.ICalculator;
+
+public class Calculator implements ICalculator {
+
+	public Calculator() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public CalciOutput addition(CalciInput calInObj) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public CalciOutput subtract(CalciInput calInObj) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public CalciOutput multiply(CalciInput calInObj) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public CalciOutput division(CalciInput calInObj) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

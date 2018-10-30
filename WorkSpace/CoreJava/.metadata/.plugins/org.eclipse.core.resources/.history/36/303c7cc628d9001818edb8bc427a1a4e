@@ -1,0 +1,5 @@
+package com.indus.training.area;
+
+public interface IArea {
+
+}

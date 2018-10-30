@@ -1,0 +1,107 @@
+package com.indus.training.height;
+
+import com.indus.training.height.impl.Height;
+
+import junit.framework.TestCase;
+
+public class TestHeight extends TestCase {
+	private Height heiObj = null;
+
+	protected void setUp() throws Exception {
+		heiObj = new Height();
+	}
+
+	protected void tearDown() throws Exception {
+		heiObj = null;
+	}
+
+	public void testInchToFeetScenario1() {
+		// Input
+		double itof = 1.0;
+
+		// Expected Result
+		double expResult = 0.08333333333333333;
+
+		// Actual Result
+		double ActualResult = heiObj.inchToFeet(itof);
+
+		// Assertion
+		assertEquals(expResult, ActualResult, 0);
+	}
+
+	public void testInchToFeetScenario2() {
+		// Input
+		double itof = 5.0;
+
+		// Expected Result
+		double expResult = 0.4166666666666667;
+
+		// Actual Result
+		double ActualResult = heiObj.inchToFeet(itof);
+
+		// Assertion
+		assertEquals(expResult, ActualResult, 0);
+
+	}
+
+	public void testInchToFeetScenario3() {
+		// Input
+		double itof = 125.2;
+
+		// Expected Result
+		double expResult = 10.433333333333334;
+
+		// Actual Result
+		double ActualResult = heiObj.inchToFeet(itof);
+
+		// Assertion
+		assertEquals(expResult, ActualResult, 0);
+
+	}
+
+	public void testFeetToInchScenario1() {
+		// Input
+		double ftoi = 6.1;
+
+		// Expected Result
+		double expResult = 73.19999999999999;
+
+		// Actual Result
+		double ActualResult = heiObj.feetToInch(ftoi);
+
+		// Assertion
+		assertEquals(expResult, ActualResult, 0);
+
+	}
+
+	public void testFeetToInchScenario2() {
+		// Input
+		double ftoi = 5.5;
+
+		// Expected Result
+		double expResult = 66.0;
+
+		// Actual Result
+		double ActualResult = heiObj.feetToInch(ftoi);
+
+		// Assertion
+		assertEquals(expResult, ActualResult, 0);
+
+	}
+
+	public void testFeetToInchScenario3() {
+		// Input
+		double ftoi = 45.0;
+
+		// Expected Result
+		double expResult = 540.0;
+
+		// Actual Result
+		double ActualResult = heiObj.feetToInch(ftoi);
+
+		// Assertion
+		assertEquals(expResult, ActualResult, 0);
+
+	}
+
+}

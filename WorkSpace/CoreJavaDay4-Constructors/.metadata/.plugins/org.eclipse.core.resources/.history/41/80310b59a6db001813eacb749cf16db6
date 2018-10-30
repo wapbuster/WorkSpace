@@ -1,0 +1,9 @@
+package com.indus.training.domain;
+
+public class SciCalOutput {
+
+	public SciCalOutput() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

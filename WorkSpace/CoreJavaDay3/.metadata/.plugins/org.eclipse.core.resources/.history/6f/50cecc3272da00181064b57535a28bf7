@@ -1,0 +1,15 @@
+package com.indus.training.domain;
+
+public class DistanceInput {
+
+	public double length;
+
+	public double getLength() {
+		return length;
+	}
+
+	public void setLength(double length) {
+		this.length = length;
+	}
+
+}

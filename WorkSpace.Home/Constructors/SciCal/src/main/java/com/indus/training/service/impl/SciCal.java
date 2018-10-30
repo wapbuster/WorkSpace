@@ -1,0 +1,23 @@
+package com.indus.training.service.impl;
+
+import com.indus.training.domain.SciCalInput;
+import com.indus.training.domain.SciCalOutput;
+import com.indus.training.service.ISciCal;
+
+public class SciCal implements ISciCal {
+
+	public SciCalOutput sciCal(SciCalInput sciCalInObj) {
+		SciCalOutput sciCalOutObj = null; // sciCalOutObj is not declared.
+
+		double sciCal = sciCalInObj.getSciCal(); // a block in the top of the stack is created.
+
+		double result = Math.toRadians(sciCal);
+		result = Math.cos(result); // new space is allocated in stack.
+
+		sciCalOutObj = new SciCalOutput(sciCal, result); // created in Heap memory and stack memory contains the reference for
+													// it.
+
+		return sciCalOutObj;
+	} // method is terminated. Memory block allocated for sciCal() in stack becomes
+		// free.
+}

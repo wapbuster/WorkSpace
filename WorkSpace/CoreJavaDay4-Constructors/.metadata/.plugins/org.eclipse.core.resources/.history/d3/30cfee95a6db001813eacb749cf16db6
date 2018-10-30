@@ -1,0 +1,9 @@
+package com.indus.training.service.impl;
+
+public class SciCal {
+
+	public SciCal() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

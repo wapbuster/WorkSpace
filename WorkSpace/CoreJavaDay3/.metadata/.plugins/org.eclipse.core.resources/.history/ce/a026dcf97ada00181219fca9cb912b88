@@ -1,0 +1,74 @@
+package com.indus.training.service;
+
+import com.indus.training.domain.HeightInput;
+import com.indus.training.domain.HeightOutput;
+import com.indus.training.service.impl.Height;
+
+import junit.framework.TestCase;
+
+public class TestHeight extends TestCase {
+	private Height heightObj = null;
+
+	protected void setUp() throws Exception {
+		heightObj = new Height();
+	}
+
+	protected void tearDown() throws Exception {
+		heightObj = null;
+	}
+
+	public void testHeightScenario1() {
+		// input
+		HeightInput heightInObj = new HeightInput();
+		heightInObj.setHeight(1.0);
+
+		// expected result
+		HeightOutput expHeightOutObj = new HeightOutput();
+		expHeightOutObj.setHeight(1.0);
+		expHeightOutObj.setResult(12.0);
+
+		// actual result
+		HeightOutput actHeightOutObj = heightObj.height(heightInObj);
+
+		// assertion
+		assertEquals(expHeightOutObj.getHeight(), actHeightOutObj.getHeight(), 0);
+		assertEquals(expHeightOutObj.getResult(), actHeightOutObj.getResult(), 0);
+	}
+
+	public void testHeightScenario2() {
+		// input
+		HeightInput heightInObj = new HeightInput();
+		heightInObj.setHeight(2.5);
+
+		// expected result
+		HeightOutput expHeightOutObj = new HeightOutput();
+		expHeightOutObj.setHeight(2.5);
+		expHeightOutObj.setResult(1.5537600994406464);
+
+		// actual result
+		HeightOutput actHeightOutObj = heightObj.height(heightInObj);
+
+		// assertion
+		assertEquals(expHeightOutObj.getHeight(), actHeightOutObj.getHeight(), 0);
+		assertEquals(expHeightOutObj.getResult(), actHeightOutObj.getResult(), 0);
+	}
+
+	public void testHeightScenario3() {
+		// input
+		HeightInput heightInObj = new HeightInput();
+		heightInObj.setHeight(5.9);
+
+		// expected result
+		HeightOutput expHeightOutObj = new HeightOutput();
+		expHeightOutObj.setHeight(5.9);
+		expHeightOutObj.setResult(3.666873834679926);
+
+		// actual result
+		HeightOutput actHeightOutObj = heightObj.height(heightInObj);
+
+		// assertion
+		assertEquals(expHeightOutObj.getHeight(), actHeightOutObj.getHeight(), 0);
+		assertEquals(expHeightOutObj.getResult(), actHeightOutObj.getResult(), 0);
+	}
+}
+

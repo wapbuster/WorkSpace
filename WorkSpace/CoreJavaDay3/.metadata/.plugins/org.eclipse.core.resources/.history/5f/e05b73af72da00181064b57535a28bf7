@@ -1,0 +1,11 @@
+package com.indus.training.service;
+
+import junit.framework.TestCase;
+
+public class TestDistance extends TestCase {
+
+	public void testDistance() {
+		fail("Not yet implemented");
+	}
+
+}

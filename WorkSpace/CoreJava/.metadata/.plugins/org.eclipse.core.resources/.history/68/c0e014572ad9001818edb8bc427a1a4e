@@ -1,0 +1,50 @@
+package com.indus.training.area;
+
+import com.indus.training.area.impl.Area;
+
+import junit.framework.TestCase;
+
+public class TestArea extends TestCase {
+	private Area areObj = null;
+
+	protected void setUp() throws Exception {
+		areObj = new Area();
+	}
+
+	protected void tearDown() throws Exception {
+		areObj = null;
+	}
+
+	public void testSquare() {
+		// Input
+		double side = 2.0;
+
+		// Expected Result
+		double expResult = 4.0;
+		// Actual Result
+		double actualResult = areObj.square(side);
+
+		// Assertion
+		assertEquals(expResult, actualResult, 0);
+	}
+
+	public void testRectangle() {
+		// Input
+		double length = 2.0;
+		double breadth = 4.0;
+
+		// Expected Result
+		double expResult = 8.0;
+		// Actual Result
+		double actualResult = areObj.rectangle(length, breadth);
+
+		// Assertion
+		assertEquals(expResult, actualResult, 0);
+
+	}
+
+	public void testCircle() {
+
+	}
+
+}

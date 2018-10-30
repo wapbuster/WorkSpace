@@ -1,0 +1,9 @@
+package com.indus.training.domain;
+
+public class HeightOutput {
+
+	public HeightOutput() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

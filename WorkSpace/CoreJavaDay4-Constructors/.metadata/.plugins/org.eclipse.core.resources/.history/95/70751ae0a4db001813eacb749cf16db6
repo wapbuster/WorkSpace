@@ -1,0 +1,9 @@
+package com.indus.training.service.impl;
+
+public class Mass {
+
+	public Mass() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
