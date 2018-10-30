@@ -7,7 +7,6 @@ INDEX VERSION 1.131+C:\IndusTraining\WorkSpace\CoreJavaDay5\.metadata\.plugins\o
 3068640910.index
 3778645487.index
 318857592.index
-3867580250.index
 293692079.index
 1334412443.index
 2694812966.index
