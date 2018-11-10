@@ -25,7 +25,7 @@ public class SciCal extends Calc implements ICalc {
 		double param1 = calcInObj.getParam1();
 
 		double result = Math.toRadians(param1);
-		result = Math.cos(result);
+		result = Math.sin(result);
 
 		calcOutObj = new CalcOutput(param1, result);
 
@@ -38,7 +38,7 @@ public class SciCal extends Calc implements ICalc {
 		double param1 = calcInObj.getParam1();
 
 		double result = Math.toRadians(param1);
-		result = Math.cos(result);
+		result = Math.tan(result);
 
 		calcOutObj = new CalcOutput(param1, result);
 

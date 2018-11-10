@@ -14,8 +14,7 @@ public class Calculator implements ICalculator {
 
 		double result = param1 + param2; // allocated to stack memory
 
-		calOutObj = new CalciOutput(param1, param2, result); // allocated to heap
-		memory
+		calOutObj = new CalciOutput(param1, param2, result); // allocated to heap memory
 
 		return calOutObj;
 	}

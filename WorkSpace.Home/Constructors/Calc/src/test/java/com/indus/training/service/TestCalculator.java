@@ -36,6 +36,8 @@ public class TestCalculator extends TestCase {
 		assertEquals(expCalOutObj.getParam2(), actCalOutObj.getParam2(), 0);
 		assertEquals(expCalOutObj.getResult(), actCalOutObj.getResult(), 0);
 
+
+
 	}
 
 	public void testSubtractSenario1() {

@@ -9,23 +9,40 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="hideWarnings" value="true" />
+    <option name="HIDE_WARNINGS" value="true" />
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-2053765333">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="11" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.15" value="2" />
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.32" value="1" />
+          <entry key="project.open.time.34" value="1" />
+          <entry key="project.open.time.45" value="1" />
+          <entry key="project.open.time.46" value="1" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="1" />
-          <entry key="java" value="348" />
+          <entry key="java" value="1149" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="348" />
+          <entry key="JAVA" value="1149" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
@@ -46,17 +63,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/indus/training/pack/A.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/indus/training/pack2/B.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="255">
+              <caret line="15" column="32" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -79,6 +87,7 @@
         <option value="$PROJECT_DIR$/src/B.java" />
         <option value="$PROJECT_DIR$/src/A.java" />
         <option value="$PROJECT_DIR$/src/com/indus/training/pack2/B.java" />
+        <option value="$PROJECT_DIR$/src/com/indus/training/pack/B.java" />
         <option value="$PROJECT_DIR$/src/com/indus/training/pack/A.java" />
       </list>
     </option>
@@ -89,9 +98,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="676" />
-    <option name="width" value="697" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="width" value="545" />
     <option name="height" value="745" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -100,8 +109,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -127,37 +136,21 @@
               <item name="training" type="462c0819:PsiDirectoryNode" />
               <item name="pack" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Learn2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Learn2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="training" type="462c0819:PsiDirectoryNode" />
-              <item name="pack2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Learn2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Learn2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="training" type="462c0819:PsiDirectoryNode" />
-              <item name="pack2" type="462c0819:PsiDirectoryNode" />
-              <item name="B.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540997070106" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ArraysPractice" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541536766658" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Complete" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="Settings.Sequence.Configuration" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -171,13 +164,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Access (1)">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Access (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.indus.training.pack2.Access" />
+      <option name="MAIN_CLASS_NAME" value="com.indus.training.pack.Access" />
       <module name="Learn2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.indus.training.pack2.*" />
+          <option name="PATTERN" value="com.indus.training.pack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -192,8 +185,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Access" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.indus.training.pack2.Access" />
+      <module name="Learn2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.indus.training.pack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="B" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.indus.training.pack2.B" />
+      <option name="MAIN_CLASS_NAME" value="com.indus.training.pack.B" />
       <module name="Learn2" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -234,44 +240,55 @@
       <option name="presentableId" value="Default" />
       <updated>1540936662515</updated>
       <workItem from="1540936667733" duration="6248000" />
+      <workItem from="1541094398408" duration="1613000" />
+      <workItem from="1541271084030" duration="281000" />
+      <workItem from="1541272213849" duration="3265000" />
+      <workItem from="1541286723711" duration="6269000" />
+      <workItem from="1541536832443" duration="2146000" />
+      <workItem from="1541549086075" duration="838000" />
+      <workItem from="1541623548666" duration="228000" />
+      <workItem from="1541713596946" duration="956000" />
+      <workItem from="1541714601708" duration="302000" />
+      <workItem from="1541782959274" duration="1533000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6248000" />
+    <option name="totallyTimeSpent" value="23679000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" weight="0.32903227" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" weight="0.32903227" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" sideWeight="0.50075644" side_tool="true" weight="0.32903227" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4967742" visible="true" weight="0.15128593" />
+      <window_info id="Structure" order="1" sideWeight="0.5032258" side_tool="true" visible="true" weight="0.15128593" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Learn" order="7" weight="0.32980332" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32903227" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.32903227" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="5" />
+      <window_info anchor="bottom" id="Version Control" order="6" show_stripe_button="false" weight="0.32903227" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50075644" side_tool="true" weight="0.32903227" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32903227" />
+      <window_info anchor="bottom" id="Sequence" order="11" weight="0.2516129" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="right" id="Run" order="9" sideWeight="0.49924356" weight="0.33812407" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,18 +297,27 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../.." />
+    </ignored-roots>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/indus/training/pack2/B.java">
+    <entry file="file://$PROJECT_DIR$/src/com/indus/training/pack/B.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="198">
+          <caret line="12" column="44" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/indus/training/pack/A.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        <state relative-caret-position="255">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="32" />
         </state>
       </provider>
     </entry>

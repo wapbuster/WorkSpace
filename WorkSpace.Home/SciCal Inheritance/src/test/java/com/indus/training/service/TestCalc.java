@@ -11,6 +11,7 @@ public class TestCalc extends TestCase {
 
 	// private Calc calcObj = null;
 	private SciCal sciCalObj = null;
+	//private Cal calObj = null;
 
 	protected void setUp() throws Exception {
 		// calcObj = new Calc();

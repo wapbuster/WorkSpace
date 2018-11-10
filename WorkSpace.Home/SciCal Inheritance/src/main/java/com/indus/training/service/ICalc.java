@@ -25,5 +25,5 @@ public interface ICalc {
 
 	public CalcOutput division(CalcInput calcInObj);
 
-	// public CalcOutput sin(CalcInput calcInObj);
+	//public CalcOutput sin(CalcInput calcInObj);
 }

@@ -2,25 +2,31 @@ package com.indus.training.pack;
 
 public class A {
 
-    public int i; // public be default
-    protected int j; // private to com.indus.training.pack.A
+    public static void main(String args[]) {
 
 
-    public void setij(int x, int y) {
-        i = x;
-        j = y;
-    }
+        String word ="abcadbre";
 
-    public void add(int... row) {
-        int sum = 0;
+        String[] ary = "abcadbre".split("");
 
-        for (int i=0 ; i < row.length; i++) {
+        System.out.println(ary[0]);
 
-            sum = sum + row[i];
+        for(int i=0;i<ary.length;i++){
+            for(int j=0;j<ary.length;j++){
+                if(ary[i]==ary[j]){
+                    System.out.println("repeated");
+                }
+                else{
+                    System.out.println("not repeated.");
+                }
+
+            }
 
         }
-        System.out.println(sum);
 
 
+        }
     }
-}
+
+
+
