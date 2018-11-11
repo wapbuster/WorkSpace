@@ -1,17 +1,15 @@
 package com.indus.training.core.ui;
 
-import com.indus.training.core.service.impl.FileOperations;
-import com.indus.training.core.service.impl.FileOperations2;
-
 import java.io.Console;
 import java.io.IOException;
+
+import com.indus.training.core.service.impl.FileOperations2;
 
 public class TestFileOpUI {
 
 	public static void main(String[] args) throws IOException {
 
 		Console myConsole = System.console();
-		FileOperations fObj = new FileOperations();
 		FileOperations2 fObj2 = new FileOperations2();
 
 		if (myConsole == null) {
@@ -29,35 +27,8 @@ public class TestFileOpUI {
 
 			if (menu.equals("1")) {
 
-				while (true) {
 
-					myConsole.writer().println("Enter 1 to write in a file  : ");
-					myConsole.writer().println("Enter 2 to read a file  : ");
-					myConsole.writer().println("Enter Q to  quit this program (bs) : ");
-					String userSelection = myConsole.readLine();
 
-					if (userSelection.equals("1")) {
-						String userInput = myConsole.readLine("Enter the message to be written  : ");
-						String outFileName = myConsole.readLine("Enter the name of file to be saved : ");
-						fObj.fileWrite(userInput, outFileName);
-					}
-
-					else if (userSelection.equals("2")) {
-						String fileName = myConsole.readLine("Enter the file name to be read  : ");
-						fObj.fileRead(fileName);
-						myConsole.writer().println();
-					}
-
-					else if (userSelection.equals("Q")) {
-						System.exit(0);
-					}
-
-					else {
-						myConsole.writer().println("User Selected wrong option !!");
-
-					}
-
-				}
 			}
 			if (menu.equals("2")) {
 
@@ -86,7 +57,7 @@ public class TestFileOpUI {
 
 					else {
 						myConsole.writer().println("User Selected wrong option !!");
-
+//						System.out.println();
 					}
 
 				}
