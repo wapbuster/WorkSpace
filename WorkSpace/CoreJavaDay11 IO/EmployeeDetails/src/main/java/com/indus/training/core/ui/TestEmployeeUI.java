@@ -13,6 +13,8 @@ public class TestEmployeeUI {
 
 		Console myConsole = System.console();
 		IEmployeeDAO empObj = new EmployeeDAO();
+		
+		
 		Employee eDetailsObj = new Employee();
 
 		if (myConsole == null) {

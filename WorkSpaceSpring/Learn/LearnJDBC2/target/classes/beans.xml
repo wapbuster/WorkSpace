@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="conFactObj"
+		class="com.indus.training.dao.infra.ConnectionFactory">
+		<constructor-arg name="url"
+			value="jdbc:mysql://localhost:3306/movielens" />
+		<constructor-arg name="drMgrClass"
+			value="com.mysql.cj.jdbc.Driver" />
+		<constructor-arg name="userName" value="root" />
+		<constructor-arg name="password" value="password" />
+	</bean>
+
+	<bean id="connObj" factory-bean="conFactObj"
+		factory-method="getDBConnection" />
+
+	<bean id="genreDaoObj"
+		class="com.indus.training.dao.impl.GenreDAOImpl">
+		<constructor-arg name="mySqlConnObj" ref="connObj" />
+	</bean>
+	
+	<bean id="genreObj"
+		class="com.indus.training.domain.Genre">
+	</bean>
+
+</beans>

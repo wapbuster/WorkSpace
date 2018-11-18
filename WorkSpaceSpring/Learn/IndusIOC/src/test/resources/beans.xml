@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="bodyObj" class="com.indus.training.body.impl.CarBody"
+		scope="prototype" />
+	<bean id="engObj" class="com.indus.training.engine.impl.CarEngine"
+		scope="singleton" />
+	<bean id="seatObj" class="com.indus.training.seat.impl.Seat"
+		scope="singleton" />
+	<bean id="tyreObj" class="com.indus.training.tyre.impl.MRFTyre"
+	scope="singleton" />
+	
+		<bean id="tyreObj1"
+		class="com.indus.training.tyre.impl.GoodYearTyre" scope="singleton" />
+	<bean id="carObj" class="com.indus.training.car.impl.Audi"
+		scope="singleton" />
+
+	<!-- more bean definitions go here -->
+
+</beans>

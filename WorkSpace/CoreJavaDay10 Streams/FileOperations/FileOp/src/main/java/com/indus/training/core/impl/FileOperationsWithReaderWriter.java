@@ -12,7 +12,7 @@ import com.indus.training.core.service.IFileOp;
 
 public class FileOperationsWithReaderWriter implements IFileOp { 
 
-	private String filePath = "C:\\IndusTraining\\WorkSpace\\CoreJavaDay10 Streams\\FileTesting\\";
+	private String filePath;
 
 	public FileOperationsWithReaderWriter(String filePath) {
 		super();

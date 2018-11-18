@@ -1,0 +1,18 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.indus.training.orm.domain.Country" table="COUNTRIES">
+
+		<id name="country_id" column="COUNTRY_ID">
+			<generator class="assigned" />
+		</id>
+
+		<property name="country_name" column="COUNTRY_NAME" type="string" />
+		<property name="region_id" column="REGION_ID"
+			type="int" />
+
+	</class>
+</hibernate-mapping>
