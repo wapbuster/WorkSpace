@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://xsd.training.indus.com/Name"
+	elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema"
+	xmlns:indName="http://xsd.training.indus.com/Name">
+
+    <complexType name="Name">
+    	<sequence>
+    		<element name="firstName" type="string" maxOccurs="1" minOccurs="1"></element>
+    		<element name="lastName" type="string" maxOccurs="1" minOccurs="1"></element>
+    	</sequence>
+    </complexType>
+
+    <element name="name" type="indName:Name"></element>
+</schema>

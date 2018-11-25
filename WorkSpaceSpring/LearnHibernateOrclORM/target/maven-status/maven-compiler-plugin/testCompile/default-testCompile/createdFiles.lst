@@ -1,0 +1,6 @@
+com\indus\training\orm\dao\TestCountryDAO.class
+com\indus\training\orm\dao\TestEmployeeDAO.class
+com\indus\training\orm\dao\AllTests.class
+com\indus\training\orm\dao\TestRegionDAO.class
+com\indus\training\suite\PersistHrEntitesTests.class
+com\indus\training\orm\dao\TestDeptDAO.class

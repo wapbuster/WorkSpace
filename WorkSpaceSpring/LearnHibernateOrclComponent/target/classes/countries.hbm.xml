@@ -1,0 +1,31 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.indus.training.orm.domain.Country"
+		table="COUNTRIES2">
+
+		<id name="country_id" column="country_id">
+			<generator class="assigned" />
+		</id>
+
+		<property name="country_name" column="country_name"
+			type="string" />
+		<property name="region_id" column="region_id" type="int" />
+
+
+		<component name="countryDetails"
+			class="com.indus.training.orm.domain.CountryDetails">
+			<property name="country_population"
+				column="country_population" type="int" />
+			<property name="country_sport" column="country_sport"
+				type="string" />
+			<property name="country_religion" column="country_religion"
+				type="string" />
+		</component>
+
+
+	</class>
+</hibernate-mapping>

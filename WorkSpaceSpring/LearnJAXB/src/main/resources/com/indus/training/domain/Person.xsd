@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://domain.training.indus.com/Person"
+	elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema"
+	xmlns:indPerson="http://domain.training.indus.com/Person"
+	xmlns:indCnt="http://domain.training.indus.com/Contact">
+	<import schemaLocation="Contact.xsd"
+		namespace="http://domain.training.indus.com/Contact"></import>
+
+	<complexType name="Person">
+		<sequence>
+			<element name="name" type="indPerson:Name"></element>
+			<element name="contatDetails" type="indCnt:Contact"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="Name">
+		<sequence>
+			<element name="firstName" type="string" maxOccurs="1"
+				minOccurs="1">
+			</element>
+			<element name="lastName" type="string" maxOccurs="1"
+				minOccurs="1">
+			</element>
+			<element name="middleName" type="string" maxOccurs="1"
+				minOccurs="0"></element>
+		</sequence>
+	</complexType>
+</schema>

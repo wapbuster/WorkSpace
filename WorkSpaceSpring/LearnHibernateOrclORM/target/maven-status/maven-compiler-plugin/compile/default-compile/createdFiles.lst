@@ -1,0 +1,5 @@
+com\indus\training\orm\dao\infra\HibernateUtil.class
+com\indus\training\orm\exception\IndusPersistException.class
+com\indus\training\orm\dao\impl\CountryDAOImpl.class
+com\indus\training\orm\dao\ICountryDAO.class
+com\indus\training\orm\domain\Country.class

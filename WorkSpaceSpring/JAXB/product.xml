@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<product id="Samsung galaxy">
+    <price>950</price>
+    <owner>
+        <email>snanda@albany.edu</email>
+        <id>6381278</id>
+        <name>Sunny</name>
+    </owner>
+</product>

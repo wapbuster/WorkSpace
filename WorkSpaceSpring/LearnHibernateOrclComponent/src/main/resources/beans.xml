@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="hibernateUtil"
+		class="com.indus.training.orm.dao.infra.HibernateUtil">
+	</bean>
+
+	<bean id="sessionfactoryRef" factory-bean="hibernateUtil"
+		factory-method="getSessionFactory" />
+
+	<bean id="countryDaoObj"
+		class="com.indus.training.orm.dao.impl.CountryDAO">
+		<property name="countrySessionfactory"
+			ref="sessionfactoryRef" />
+
+	</bean>
+
+	<bean id="countryObj"
+		class="com.indus.training.orm.domain.Country">
+	</bean>
+</beans>

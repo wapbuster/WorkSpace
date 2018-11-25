@@ -29,7 +29,7 @@ public interface ICalculator {
 	 * 
 	 */
 
-	public double subtrat(double param1, double param2);
+	public double subtract(double param1, double param2);
 
 	/**
 	 * Description:

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema
+	targetNamespace="http://domain.training.indus.com/Contact"
+	elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema"
+	xmlns:indCnt="http://domain.training.indus.com/Contact"
+	xmlns:indAddress="http://domain.training.indus.com/Address">
+
+	<import schemaLocation="Address.xsd"
+		namespace="http://domain.training.indus.com/Address"></import>
+	<complexType name="Contact">
+		<sequence>
+			<element name="phoneNumnber" type="string"
+				maxOccurs="unbounded" minOccurs="0">
+			</element>
+			<element name="email" type="string" maxOccurs="unbounded"
+				minOccurs="0">
+			</element>
+			<element name="address" type="indAddress:Address"></element>
+		</sequence>
+	</complexType>
+</schema>

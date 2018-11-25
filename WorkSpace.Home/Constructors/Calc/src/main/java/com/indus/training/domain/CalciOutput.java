@@ -7,6 +7,9 @@ public class CalciOutput {
 	private double param2;
 
 	private double result;
+	
+	public CalciOutput() {
+	}
 
 	public CalciOutput(double param1, double param2, double result) {
 
@@ -27,4 +30,5 @@ public class CalciOutput {
 		return result;
 	}
 
+	
 }

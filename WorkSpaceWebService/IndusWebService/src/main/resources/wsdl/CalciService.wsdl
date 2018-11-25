@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions
+	xmlns:calSvc="http://service.training.indus.com"
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:calInOut="http://domain.training.indus.com" name="CalciService"
+	targetNamespace="http://service.training.indus.com">
+
+	<wsdl:types>
+		<xsd:schema>
+			<xsd:import schemaLocation="../schema/CalciInOut.xsd"
+				namespace="http://domain.training.indus.com" />
+		</xsd:schema>
+	</wsdl:types>
+
+	<wsdl:message name="calInRequest">
+		<wsdl:part element="calInOut:CalIn" name="inputAruguments" />
+	</wsdl:message>
+	<wsdl:message name="calOutResponse">
+		<wsdl:part element="calInOut:CalOut" name="outputResult" />
+	</wsdl:message>
+ 
+	<wsdl:portType name="CalciService">
+		<wsdl:operation name="Addition">
+			<wsdl:input name="calAddInObj"
+				message="calSvc:calInRequest" />
+			<wsdl:output name="calAddOutObj"
+				message="calSvc:calOutResponse" />			
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:binding name="CalciServiceSOAPBind"
+		type="calSvc:CalciService">
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+
+		<wsdl:operation name="Addition">
+			<soap:operation
+				soapAction="Addition" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+
+
+	</wsdl:binding>
+
+	<wsdl:service name="CalciService">
+		<wsdl:port binding="calSvc:CalciServiceSOAPBind"
+			name="CalciServiceSOAP">
+			<soap:address
+				location="http://localhost:8080/IndusWebService/calci" />
+		</wsdl:port>
+	</wsdl:service>
+
+</wsdl:definitions>

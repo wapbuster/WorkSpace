@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://domain.training.indus.com"
+	elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema"
+	xmlns:calInOut="http://domain.training.indus.com">
+
+    <complexType name="CalciInput">
+    	<sequence>
+    		<element name="param1" type="double" maxOccurs="1"
+    			minOccurs="1">
+    		</element>
+    		<element name="param2" type="double" maxOccurs="1" minOccurs="1"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="CalciOutput">
+    	<sequence>
+    		<element name="param1" type="double" maxOccurs="1"
+    			minOccurs="0">
+    		</element>
+    		<element name="param2" type="double" maxOccurs="1"
+    			minOccurs="0">
+    		</element>
+    		<element name="result" type="double" maxOccurs="1"
+    			minOccurs="1">
+    		</element>
+    		<element name="operation" type="string" maxOccurs="1" minOccurs="1"></element>
+    	</sequence>
+    </complexType>
+
+    <element name="CalIn" type="calInOut:CalciInput"></element>
+
+    <element name="CalOut" type="calInOut:CalciOutput"></element>
+
+
+</schema>

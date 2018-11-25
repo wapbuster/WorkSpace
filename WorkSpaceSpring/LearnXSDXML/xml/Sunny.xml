@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<indName:name
+	xmlns:indName="http://xsd.training.indus.com/Name"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xsd.training.indus.com/Name ../xsd/Name.xsd ">
+	
+	<indName:firstName>Sunny</indName:firstName>
+	<indName:lastName>Namdamuri</indName:lastName>
+</indName:name>
