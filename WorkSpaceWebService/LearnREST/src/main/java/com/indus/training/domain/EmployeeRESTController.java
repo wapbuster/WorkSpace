@@ -11,8 +11,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
  
-import com.howtodoinjava.demo.model.EmployeeListVO;
-import com.howtodoinjava.demo.model.EmployeeVO;
+import com.indus.training.model.EmployeeListVO;
+import com.indus.training.model.EmployeeVO;
  
 @Controller
 public class EmployeeRESTController

@@ -1,0 +1,84 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <filter>
+  	<filter-name>IndusFilter</filter-name>
+  	<display-name>IndusFilter</display-name>
+  	<description></description>
+  	<filter-class>com.indus.ui.filter.IndusFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>IndusFilter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  <servlet>
+  	<servlet-name>indusFirstServlet</servlet-name>
+  	<display-name>IndusFirstServlet</display-name>
+  	<description>Test Servlet</description>
+  	<servlet-class>com.indus.ui.servlets.IndusFirstServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>CalciInput</servlet-name>
+  	<display-name>CalciInput</display-name>
+  	<description></description>
+  	<servlet-class>com.indus.ui.servlets.CalciInput</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>CalciResult</servlet-name>
+  	<display-name>CalciResult</display-name>
+  	<description></description>
+  	<servlet-class>com.indus.ui.servlets.CalciResult</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Calci</servlet-name>
+  	<display-name>Calci</display-name>
+  	<description></description>
+  	<servlet-class>com.indus.ui.servlets.Calci</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Calculate</servlet-name>
+  	<display-name>Calculate</display-name>
+  	<description></description>
+  	<servlet-class>com.indus.ui.servlets.Calculate</servlet-class>
+  </servlet>
+ 
+  <servlet-mapping>
+  	<servlet-name>indusFirstServlet</servlet-name>
+  	<url-pattern>/IndusFirstServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>indusFirstServlet</servlet-name>
+  	<url-pattern>/FirstServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>indusFirstServlet</servlet-name>
+  	<url-pattern>/MyServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>CalciInput</servlet-name>
+  	<url-pattern>/CalciInput</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>CalciInput</servlet-name>
+  	<url-pattern>/Calci</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>CalciResult</servlet-name>
+  	<url-pattern>/CalciResult</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>CalciResult</servlet-name>
+  	<url-pattern>/OperationResult</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Calculate</servlet-name>
+  	<url-pattern>/Calculate</url-pattern>
+  </servlet-mapping>
+
+</web-app>

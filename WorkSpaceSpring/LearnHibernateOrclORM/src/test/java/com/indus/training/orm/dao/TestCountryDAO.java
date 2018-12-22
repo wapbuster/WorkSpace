@@ -34,7 +34,7 @@ public class TestCountryDAO {
 			Country conExpObj = new Country();
 			conExpObj.setCountry_id("IN");
 			conExpObj.setCountry_name("India");
-			conExpObj.setRegion_id(3);
+			conExpObj.setRegion_id(2);
 
 			Country conActObj = countryDao.readCountryByPk("IN");
 
