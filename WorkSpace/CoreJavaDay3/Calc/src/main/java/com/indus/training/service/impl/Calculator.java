@@ -5,14 +5,14 @@ import com.indus.training.domain.CalciOutput;
 import com.indus.training.service.ICalculator;
 
 /**
- * 
- * @author phani
+ *
+ * @author Sunny
  *
  */
 public class Calculator implements ICalculator {
 
 	/**
-	 * 
+	 *
 	 */
 	public CalciOutput addition(CalciInput calInObj) {
 		CalciOutput calOutObj = null;
@@ -32,7 +32,7 @@ public class Calculator implements ICalculator {
 	}
 
 	/**
-	 * 
+	 *
 	 */
 	public CalciOutput subtract(CalciInput calInObj) {
 		CalciOutput calOutObj = null;
@@ -52,7 +52,7 @@ public class Calculator implements ICalculator {
 	}
 
 	/**
-	 * 
+	 *
 	 */
 	public CalciOutput multiply(CalciInput calInObj) {
 		CalciOutput calOutObj = null;
@@ -72,7 +72,7 @@ public class Calculator implements ICalculator {
 	}
 
 	/**
-	 * 
+	 *
 	 */
 	public CalciOutput division(CalciInput calInObj) {
 		CalciOutput calOutObj = null;
