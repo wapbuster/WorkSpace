@@ -1,21 +1,25 @@
 package com.indus.training.orm.dao.infra;
 
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
 public class HibernateUtil {
-	private static final SessionFactory sessionFactory;
+	private static final EntityManagerFactory emf;
 
 	static {
 		try {
-			sessionFactory = new Configuration().configure("countries.cfg.xml").buildSessionFactory();
+			emf = Persistence.createEntityManagerFactory("CountryPU");
 		} catch (Throwable ex) {
-			System.err.println("Initial SessionFactory creation failed." + ex);
+			System.err.println("Initial EntityManagerFactory creation failed." + ex);
 			throw new ExceptionInInitializerError(ex);
 		}
 	}
 
-	public SessionFactory getSessionFactory() {
-		return sessionFactory;
+	public static EntityManagerFactory getEmf() {
+		return emf;
 	}
+
 }

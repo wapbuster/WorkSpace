@@ -4,7 +4,7 @@
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-	<class name="com.indus.training.orm.domain.Movie" table="mvoies">
+	<class name="com.indus.training.orm.domain.Movie" table="movies">
 
 		<id name="movieId" type="int" column="id">
 			<generator class="native" />

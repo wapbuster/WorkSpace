@@ -50,7 +50,7 @@ public class TestCountryDAO {
 		}
 	}
 	
-	@Test
+	//@Test
 	public void testCreateCountry() {
 
 		try {

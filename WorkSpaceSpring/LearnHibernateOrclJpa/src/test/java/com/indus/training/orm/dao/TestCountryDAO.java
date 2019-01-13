@@ -32,11 +32,11 @@ public class TestCountryDAO {
 
 		try {
 			Country conExpObj = new Country();
-			conExpObj.setCountry_id("IN");
-			conExpObj.setCountry_name("India");
+			conExpObj.setCountry_id("ML");
+			conExpObj.setCountry_name("Malaysia");
 			conExpObj.setRegion_id(3);
 
-			Country conActObj = countryDao.readCountryByPk("IN");
+			Country conActObj = countryDao.readCountryByPk("ML");
 
 			assertEquals(conExpObj.getCountry_id(), conActObj.getCountry_id());
 		} catch (IndusException e) {
@@ -49,12 +49,12 @@ public class TestCountryDAO {
 
 		try {
 			Country conExpObj = new Country();
-			conExpObj.setCountry_id("PK");
-			conExpObj.setCountry_name("Pakistan");
+			conExpObj.setCountry_id("ML");
+			conExpObj.setCountry_name("Malaysia");
 			conExpObj.setRegion_id(5);
 			countryDao.createCountry(conExpObj);
 
-			Country conActObj = countryDao.readCountryByPk("PK");
+			Country conActObj = countryDao.readCountryByPk("ML");
 
 			assertEquals(conExpObj, conActObj);
 		} catch (IndusException e) {

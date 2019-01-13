@@ -5,10 +5,12 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<bean id="countryDaoObj"
-		class="com.indus.training.orm.dao.impl.CountryDAOImpl">
+		class="com.indus.training.orm.dao.impl.CountryDAO">
 	</bean>
 	
 	<bean id="countryObj"
 		class="com.indus.training.orm.domain.Country">
 	</bean>
+	
+	
 </beans>

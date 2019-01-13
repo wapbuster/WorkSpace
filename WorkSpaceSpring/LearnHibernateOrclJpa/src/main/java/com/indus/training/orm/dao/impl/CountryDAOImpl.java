@@ -31,7 +31,7 @@ public class CountryDAOImpl implements ICountryDAO {
 		} catch (Exception e) {
 			throw new IndusException("Exception Selecting Record from data base", e);
 		} finally {
-			tranx.rollback();
+			//tranx.rollback();
 			em.clear();
 		}
 		return countryObj;
