@@ -5,14 +5,14 @@ import com.indus.training.service.impl.Cal;
 import junit.framework.TestCase;
 
 public class TestCal extends TestCase {
-	//private Cal calObj = null;
+	private Cal calObj = null;
 
 	protected void setUp() throws Exception {
-		//calObj = new Cal();
+		calObj = new Cal();
 	}
 
 	protected void tearDown() throws Exception {
-		//calObj = null;
+		calObj = null;
 	}
 
 	public void testAddition() {

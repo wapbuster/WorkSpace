@@ -106,7 +106,7 @@ public class CarAssembly {
 
 			Properties carProperties = new Properties();
 			carProperties.load(new FileInputStream(
-					new File("C:\\IndusTraining\\WorkSpace.Home\\IndusIOC\\src\\test\\resources\\car.properties")));
+					new File("C:\\IndusTraining\\WorkSpace\\CoreJavaDay12IOC\\IndusIOC\\src\\test\\resources\\car.properties")));
 
 			// Control of create object has been inverted.
 			Class tyreClassObj = Class.forName(carProperties.getProperty("tyreClass"));
@@ -167,7 +167,7 @@ public class CarAssembly {
 		try {
 
 			IndusIOCContainer indIocConObj = new IndusIOCContainer(
-					"C:\\IndusTraining\\WorkSpace.Home\\IndusIOC\\src\\test\\resources\\car.properties");
+					"C:\\IndusTraining\\WorkSpace\\CoreJavaDay12IOC\\IndusIOC\\src\\test\\resources\\car.properties");
 
 			// Control of create object has been inverted.
 

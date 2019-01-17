@@ -6,7 +6,8 @@ public class CarTest {
 
 	public static void main(String[] args) {
 
-		ICar car = CarAssembly.assembleCarWithIOCContainer();
+		//ICar car = CarAssembly.assembleCarWithIOCContainer();
+		ICar car = CarAssembly.assembleCarWithOutNew();
 		try {
 			car.startCar();
 			car.accelerate();
