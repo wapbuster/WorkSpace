@@ -42,18 +42,14 @@ public class DBConnection implements Serializable, Cloneable {
 	}
 
 	// version 1.0
-	public static DBConnection getConnection() throws Exception {
-
-		if (dbConn == null) {
-			try {
-				dbConn = new DBConnection();
-			} catch (Exception e) {
-				throw e;
-			}
-		}
-
-		return dbConn;
-	}
+	/*
+	 * public static DBConnection getConnection() throws Exception {
+	 * 
+	 * if (dbConn == null) { try { dbConn = new DBConnection(); } catch (Exception
+	 * e) { throw e; } }
+	 * 
+	 * return dbConn; }
+	 */
 
 	// version 2.0
 	/*
@@ -65,13 +61,22 @@ public class DBConnection implements Serializable, Cloneable {
 	 */
 
 	// version 3.0
-	/*
-	 * public static DBConnection getConnection() throws Exception { if (dbConn ==
-	 * null) { synchronized (DBConnection.class) { if (dbConn == null) { try {
-	 * dbConn = new DBConnection(); } catch (Exception e) { throw e; } } }
-	 * 
-	 * } return dbConn; }
-	 */
+
+	public static DBConnection getConnection() throws Exception {
+		if (dbConn == null) {
+			synchronized (LOCK) {
+				if (dbConn == null) {
+					try {
+						dbConn = new DBConnection();
+					} catch (Exception e) {
+						throw e;
+					}
+				}
+			}
+
+		}
+		return dbConn;
+	}
 
 	@Override
 	public boolean equals(Object that) {

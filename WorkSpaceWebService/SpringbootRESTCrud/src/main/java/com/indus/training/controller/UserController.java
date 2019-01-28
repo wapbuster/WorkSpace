@@ -6,6 +6,7 @@ import java.util.Optional;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -23,6 +24,7 @@ import javassist.tools.web.BadHttpRequest;
 
 @RestController
 @RequestMapping(path = "/country")
+
 public class UserController implements IUserController {
 
 	static Logger logger = Logger.getLogger(UserController.class);
